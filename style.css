@@ -1,0 +1,115 @@
+body.retro-look {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: "Press Start 2P", cursive;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0ff;
+}
+
+.game-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 0 0 5px #0ff;
+}
+
+#game-area {
+  position: relative;
+  border: 5px solid #39ff14;
+  box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 15px #39ff14;
+}
+
+#welcome-screen {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 36px;
+  font-family: Arial;
+}
+
+.continue-text {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.controls p {
+  font-size: 1em;
+  text-shadow: 0 0 20px #0ff;
+}
+
+.names {
+  padding-top: 24px;
+  font-size: 0.7em;
+  color: #0ff;
+  text-shadow: 0 0 20px #0ff;
+}
+
+#level-selection {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.levels {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.level-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #0ff;
+  background: none;
+  border: 2px solid #0ff;
+  cursor: pointer;
+}
+
+.level-btn:hover {
+  background-color: #0ff;
+  color: black;
+}
+
+.fpsCounter, .log {
+  color: greenyellow; 
+  position: absolute; 
+  top: 40px;
+}
+.log {
+  left: 0;
+  padding-left: 100px;
+}

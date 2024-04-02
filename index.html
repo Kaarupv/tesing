@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brickanoid</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="retro-look">
+    <div class="game-container">
+      <h1 class="game-title">Brickanoid</h1>
+      <div id="game-area">
+        <div id="welcome-screen">
+          <p class="welcome-text">Welcome to Brickanoid</p>
+          <p class="continue-text">Press Space to continue</p>
+        </div>
+        <div id="level-selection" style="display: none">
+          <p>Select a level:</p>
+          <div class="levels">
+            <button class="level-btn" data-level="1">Level 1</button>
+            <button class="level-btn" data-level="2">Level 2</button>
+            <button class="level-btn" data-level="3">Level 3</button>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <p>← to move left</p>
+        <p>→ to move right</p>
+        <p>p for pause</p>
+      </div>
+      <p class="names">Coded by rpraks, kvares, mkangur</p>
+    </div>
+    <div class="fpsCounter">FPS: <span id="fpsOut"></span></div>
+    <div class="log">dt: <span id="dt"></span>ms</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+      });
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
